@@ -11,12 +11,12 @@ public:
     int pos,temp;
     float avwt,avtat;
 
-    void disAvgT(float x,float y)
+  public void disAvgT(float x,float y)
     {
         cout<<"\n\nAverage Waiting Time:"<<x;
         cout<<"\nAverage Turnaround Time:"<<y;
     };
-    void getdata()
+   public void getdata()
     {
         cout<<"Enter Total Number of Process:";
         cin>>n;
@@ -67,7 +67,7 @@ public:
             total+=wt[i];
         }
     };
-    void display()
+   public void display()
     {
         avwt=total/n;      //average waiting time
         total=0;
@@ -83,7 +83,7 @@ public:
         avtat=total/n;
         disAvgT(avwt,avtat);  //average turnaround time
     };
-} pr;
+} 
 
 
 
